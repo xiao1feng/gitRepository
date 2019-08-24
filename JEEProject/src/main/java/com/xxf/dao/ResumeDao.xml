@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xxf.dao.ResumeDao">
+    <insert id="addResume">
+        insert into T_CV values (SEQ_CV.nextval,#{c_id},#{cv_name},#{cv_gender},#{cv_birth},#{cv_address},#{cv_school},#{cv_education},
+        #{cv_major},#{cv_enroll_date},#{cv_salary},#{cv_exprience})
+    </insert>
+</mapper>

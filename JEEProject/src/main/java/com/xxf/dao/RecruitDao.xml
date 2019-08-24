@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.xxf.dao.RecruitDao">
+    <select id="getRecById" resultType="com.xxf.model.Recruit">
+        select * from T_RECRUIT where RCT_ID=#{rec_id}
+    </select>
+    <select id="getRecs" resultType="com.xxf.model.Recruit">
+        select * from  T_RECRUIT;
+    </select>
+</mapper>

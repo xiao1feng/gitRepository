@@ -5,6 +5,14 @@ public class Admini {
     private String a_name;
     private String a_pass;
 
+    public Admini() {
+    }
+
+    public Admini(String a_name, String a_pass) {
+        this.a_name = a_name;
+        this.a_pass = a_pass;
+    }
+
     public Integer getA_id() {
         return a_id;
     }
